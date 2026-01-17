@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHALY - The White Whale</title>
+    <meta name="description" content="WHALY the white whale is a degen at heart. No charts, no fear, just vibes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Luckiest+Guy&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="image2.png" alt="WHALY Logo" class="logo-img">
+            </div>
+            <a href="#" class="buy-btn nav-buy">
+                <span>BUY</span>
+            </a>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="hero-content">
+            <!-- Left About Section -->
+            <div class="about-section left-about">
+                <h2 class="about-title">ABOUT</h2>
+                <p class="about-text">
+                    WHALY THE WHITE WHALE IS A DEGEN AT HEART.
+                    NO CHARTS. NO FEAR. JUST VIBES.
+                </p>
+                <p class="about-text">
+                    BORN IN VOLATILE WATERS, WHALY REPRESENTS INSTINCT OVER
+                    LOGIC, CONVICTION OVER COMFORT, AND MOVEMENT OVER
+                    HESITATION.
+                </p>
+                <p class="about-text">
+                    THIS SITE SHOWCASES ILLUSTRATIONS AND VISUAL EXPERIMENTS
+                    INSPIRED BY CRYPTO CULTURE, INTERNET HUMOR, AND THE SPIRIT
+                    OF TAKING RISKS — EVEN WHEN THE OCEAN GETS ROUGH.
+                </p>
+            </div>
+
+            <!-- Center Character -->
+            <div class="character-section">
+                <div class="character-container">
+                    <div class="character-glow"></div>
+                    <img src="image2.png" alt="WHALY Character" class="character-img">
+                </div>
+
+                <h1 class="title">WHALY</h1>
+
+                <a href="#" class="buy-btn main-buy">
+                    <span>BUY</span>
+                </a>
+
+                <div class="ca-container">
+                    <span class="ca-label">CA</span>
+                    <input type="text" class="ca-input" value="0x1234...5678" readonly>
+                    <button class="copy-btn" id="copyBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right About Section -->
+            <div class="about-section right-about">
+                <p class="about-text">
+                    INSTINCT OVER OVERTHINKING.
+                </p>
+                <p class="about-text">
+                    CONVICTION OVER COMFORT.
+                </p>
+                <p class="about-text">
+                    AND MOVING FORWARD, EVEN WHEN
+                    THE OCEAN IS VOLATILE.
+                </p>
+            </div>
+        </div>
+
+        <!-- Floating Crystals -->
+        <div class="crystal crystal-1"></div>
+        <div class="crystal crystal-2"></div>
+        <div class="crystal crystal-3"></div>
+        <div class="crystal crystal-4"></div>
+        <div class="crystal crystal-5"></div>
+    </section>
+
+    <!-- Chart Section -->
+    <section class="chart-section" id="chart">
+        <div class="chart-container">
+            <h2 class="chart-title">LIVE CHART</h2>
+            <p class="chart-subtitle">Pump.fun Meme Coin - Real-Time Price</p>
+
+            <div class="chart-wrapper">
+                <!-- DexScreener Embed for Pump.fun Token -->
+                <!-- Ganti TOKEN_ADDRESS dengan alamat contract meme coin kamu -->
+                <div id="dexscreener-embed">
+                    <iframe src="https://dexscreener.com/solana/TOKEN_ADDRESS?embed=1&theme=dark&trades=0&info=0"
+                        style="width: 100%; height: 450px; border: none; border-radius: 15px;">
+                    </iframe>
+                </div>
+
+                <!-- Alternatif: Birdeye Chart -->
+                <!-- 
+                <iframe 
+                    src="https://birdeye.so/tv-widget/TOKEN_ADDRESS?chain=solana&viewMode=pair&chartInterval=15&chartType=CANDLE&chartTimezone=Asia%2FJakarta&chartLeftToolbar=show&theme=dark"
+                    style="width: 100%; height: 450px; border: none; border-radius: 15px;">
+                </iframe>
+                -->
+            </div>
+
+            <div class="chart-stats">
+                <div class="stat-card">
+                    <span class="stat-label">Platform</span>
+                    <span class="stat-value">PUMP.FUN</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Network</span>
+                    <span class="stat-value">SOLANA</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Status</span>
+                    <span class="stat-value live">● LIVE</span>
+                </div>
+            </div>
+
+            <div class="chart-links">
+                <a href="https://pump.fun" target="_blank" class="chart-link">
+                    <span>🚀 View on Pump.fun</span>
+                </a>
+                <a href="https://dexscreener.com/solana" target="_blank" class="chart-link">
+                    <span>📊 DexScreener</span>
+                </a>
+                <a href="https://birdeye.so" target="_blank" class="chart-link">
+                    <span>🦅 Birdeye</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
